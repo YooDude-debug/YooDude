@@ -1,83 +1,98 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>YooDude</title>
 
 <link rel="icon" type="image/png" href="logo.png">
 
 <style>
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-    margin:0;
-    background:#0f0f0f;
-    color:white;
-    font-family:Arial,Helvetica,sans-serif;
-    text-align:center;
+margin:0;
+background:#0f0f0f;
+color:white;
+font-family:Arial,Helvetica,sans-serif;
+text-align:center;
 }
 
 header{
-    padding:30px;
-    background:#111;
-    border-bottom:2px solid #39ff14;
+padding:60px 20px;
+background:#111;
+border-bottom:2px solid #39ff14;
+box-shadow:0 0 25px rgba(57,255,20,.2);
 }
 
 h1{
-    font-size:60px;
-    color:#39ff14;
-    margin:0;
+font-size:65px;
+margin:0;
+color:#39ff14;
+text-shadow:0 0 15px #39ff14;
 }
 
 p{
-    color:#ccc;
-    font-size:20px;
+color:#cccccc;
+font-size:20px;
+line-height:1.6;
 }
 
 button{
-    margin-top:25px;
-    background:#39ff14;
-    color:black;
-    border:none;
-    padding:18px 40px;
-    border-radius:50px;
-    font-size:20px;
-    cursor:pointer;
-    font-weight:bold;
+margin-top:30px;
+background:#39ff14;
+color:black;
+border:none;
+padding:18px 45px;
+border-radius:50px;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
 }
 
 button:hover{
-    transform:scale(1.05);
+transform:scale(1.08);
+box-shadow:0 0 25px #39ff14;
 }
 
 .card{
-    width:700px;
-    max-width:90%;
-    margin:40px auto;
-    background:#1b1b1b;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 0 20px rgba(57,255,20,.2);
+width:700px;
+max-width:90%;
+margin:60px auto;
+background:#1b1b1b;
+border-radius:20px;
+padding:30px;
+box-shadow:0 0 25px rgba(57,255,20,.25);
 }
 
 .tag{
-    display:inline-block;
-    background:#39ff14;
-    color:black;
-    padding:8px 18px;
-    border-radius:30px;
-    font-weight:bold;
+display:inline-block;
+background:#39ff14;
+color:black;
+padding:10px 22px;
+border-radius:30px;
+font-weight:bold;
+font-size:18px;
+margin-bottom:15px;
 }
 
 video{
-    width:100%;
-    border-radius:15px;
-    margin-top:20px;
+width:100%;
+border-radius:15px;
+margin-top:25px;
+box-shadow:0 0 20px rgba(57,255,20,.25);
 }
 
 footer{
-    padding:40px;
-    color:#666;
+padding:50px;
+color:#666;
+font-size:15px;
 }
 
 </style>
@@ -90,27 +105,38 @@ footer{
 
 <h1>YooDude</h1>
 
-<p>Discover Slang. Feel the Vibe.</p>
+<p>
+Discover Slang.<br>
+Feel the Vibe.
+</p>
 
+<a href="#video">
 <button>Enter the Vibe</button>
+</a>
 
 </header>
 
-<div class="card">
+<div class="card" id="video">
 
 <div class="tag">$Moin</div>
 
 <h2>Willkommen bei YooDude</h2>
 
-<p>Die erste Social-Media-Plattform rund um SlangTags, Kultur und Vibes.</p>
+<p>
+Die erste Social-Media-Plattform rund um SlangTags,
+regionale Kultur und echte Vibes.
+</p>
 
-<!-- Hier kommt später dein Video -->
+<video autoplay muted loop playsinline controls>
+<source src="yoodude.mp4" type="video/mp4">
+Dein Browser unterstützt keine Videos.
+</video>
 
 </div>
 
 <footer>
 
-Coming Soon © YooDude
+Coming Soon © 2026 YooDude
 
 </footer>
 
